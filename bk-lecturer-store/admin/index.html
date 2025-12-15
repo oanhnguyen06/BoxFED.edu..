@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin – BK Lecturer Store</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="admin-container">
+  <h1>📋 Admin – Quản lý giảng viên</h1>
+
+  <!-- ===== FORM NHẬP GIẢNG VIÊN ===== -->
+  <form id="lecturer-form">
+    <h2>➕ Thêm giảng viên</h2>
+
+    <label>Họ và tên</label>
+    <input type="text" id="name" required>
+
+    <label>Học hàm / học vị</label>
+    <input type="text" id="title">
+
+    <label>Chức vụ</label>
+    <input type="text" id="role">
+
+    <label>Đơn vị</label>
+    <input type="text" id="unit">
+
+    <label>Ngành học</label>
+    <input type="text" id="major">
+
+    <label>Ảnh (URL hoặc tên file)</label>
+    <input type="text" id="image">
+
+    <button type="submit">Lưu giảng viên</button>
+  </form>
+
+  <!-- ===== UPLOAD CSV ===== -->
+  <div class="upload-box">
+    <h2>⬆ Upload CSV</h2>
+    <input type="file" id="csvFile" accept=".csv">
+    <button onclick="uploadCSV()">Upload</button>
+  </div>
+
+  <p id="status"></p>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
 
