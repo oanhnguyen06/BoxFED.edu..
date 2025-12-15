@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>BK Lecturer Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="assets/img/logo.png">
+    <span>BK LECTURER STORE</span>
+  </div>
+
+  <nav>
+    <a class="active">Trang chủ</a>
+    <a href="lecturers.html">Giảng viên</a>
+    <a>Review</a>
+    <a href="chatbot.html">Chatbot</a>
+    <a>Liên hệ</a>
+  </nav>
+
+  <div class="search">
+    <input placeholder="Tìm giảng viên theo tên / lĩnh vực...">
+    <button>🔍</button>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Danh sách giảng viên — Khoa KH&CN Giáo dục</h1>
+  <p class="sub">
+    Click vào ảnh hoặc tên để xem chi tiết. 
+  </p>
+
+  <div id="lecturer-list" class="grid"></div>
+
+  <div class="pagination">
+    <button>◀</button>
+    <button class="active">1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>▶</button>
+  </div>
+</main>
+
+<script src="js/lecturers.js"></script>
+</body>
+</html>
 
