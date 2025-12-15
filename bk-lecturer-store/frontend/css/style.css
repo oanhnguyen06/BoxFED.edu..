@@ -1,1 +1,180 @@
+* {
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f8fb;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #fff;
+  padding: 14px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #0a3d91;
+}
+
+nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a.active {
+  color: #0a5cff;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  padding: 8px 12px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ddd;
+}
+
+.search button {
+  padding: 8px 14px;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  background: #0a5cff;
+  color: white;
+}
+
+/* MAIN */
+.container {
+  padding: 40px 60px;
+}
+
+h1 {
+  color: #0a3d91;
+}
+
+.sub {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.05);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #0a3d91;
+}
+
+.role {
+  color: #0a5cff;
+  font-weight: 600;
+}
+
+.unit {
+  background: #eef4ff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.pagination button.active {
+  background: #0a5cff;
+  color: white;
+}
+
+/* CHATBOT */
+.chatbot-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.chatbox {
+  width: 360px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.chat-header {
+  background: #0a5cff;
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.chat-body {
+  padding: 12px;
+  height: 240px;
+  overflow-y: auto;
+}
+
+.bot {
+  background: #eef4ff;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+}
+
+.chat-input button {
+  background: #0a5cff;
+  color: white;
+  border: none;
+  padding: 0 16px;
+}
 
